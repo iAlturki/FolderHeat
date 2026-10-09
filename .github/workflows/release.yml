@@ -1,0 +1,50 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      # build.bat finds Visual Studio through vswhere and builds with MSVC and
+      # the static C runtime (the MinGW fallback is for local builds only)
+      - name: Build FolderHeat.exe
+        shell: cmd
+        run: build.bat
+
+      - name: Check the exe
+        shell: pwsh
+        run: |
+          $f = Get-Item FolderHeat.exe
+          "Size: $($f.Length) bytes"
+          "SHA-256: $((Get-FileHash $f -Algorithm SHA256).Hash)"
+
+      - name: Publish the release
+        if: startsWith(github.ref, 'refs/tags/')
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $hash = (Get-FileHash FolderHeat.exe -Algorithm SHA256).Hash
+          $notes = @"
+          Folder icons that show how often you open them: blue, green, orange, red.
+
+          **Install:** download ``FolderHeat.exe`` below and run it. A folder icon appears in your system tray; right-click it for options.
+
+          - Folders you open in File Explorer warm up from blue to red; folders you stop opening cool back down
+          - Never touches folders that already have a custom icon, drive roots, Windows, Program Files or OneDrive
+          - One self-contained exe, no installer, no dependencies (Windows 10 / 11)
+
+          SHA-256: ``$hash``
+          "@
+          gh release create $env:GITHUB_REF_NAME FolderHeat.exe --title "FolderHeat $env:GITHUB_REF_NAME" --notes $notes

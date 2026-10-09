@@ -1,0 +1,17 @@
+# Build artifacts (built via build.bat; shipped as a Release, not committed)
+*.exe
+*.res
+*.res.o
+*.o
+*.obj
+
+# Logs / temp
+*.log
+*.tmp
+
+# Editor / OS cruft
+.vs/
+.vscode/
+*.user
+Thumbs.db
+desktop.ini
