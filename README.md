@@ -1,6 +1,6 @@
 <!-- AI setup by iAlturki -->
 <p align="center">
-  <img src="assets/logo.svg" width="76" alt="FolderHeat logo">
+  <img src="assets/logo.png" width="76" alt="FolderHeat logo">
   &nbsp;&nbsp;
   <a href="https://ialturki.github.io/FolderHeat/agent-setup/"><img src="assets/ai-setup.svg" width="330" alt="Set up with your AI agent — open the setup prompt copier"></a>
 </p>
