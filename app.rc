@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: CC-BY-NC-SA-4.0
+// Copyright (c) 2026 iAlturki
 #include <windows.h>
 #include "resource.h"
 
@@ -27,11 +29,11 @@ BEGIN
     BEGIN
         BLOCK "040904b0"
         BEGIN
-            VALUE "CompanyName", "iALTURKi"
+            VALUE "CompanyName", "iAlturki"
             VALUE "FileDescription", "FolderHeat - folder icons colored by how often you open them"
             VALUE "FileVersion", "1.0.0.0"
             VALUE "InternalName", "FolderHeat"
-            VALUE "LegalCopyright", "Copyright (c) 2026 iALTURKi. MIT License."
+            VALUE "LegalCopyright", "Copyright (c) 2026 iAlturki. CC BY-NC-SA 4.0."
             VALUE "OriginalFilename", "FolderHeat.exe"
             VALUE "ProductName", "FolderHeat"
             VALUE "ProductVersion", "1.0.0.0"

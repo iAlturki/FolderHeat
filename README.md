@@ -1,3 +1,12 @@
+<!-- AI setup by iAlturki -->
+<p align="center">
+  <img src="assets/logo.svg" width="76" alt="FolderHeat logo">
+  &nbsp;&nbsp;
+  <a href="https://ialturki.github.io/FolderHeat/agent-setup/"><img src="assets/ai-setup.svg" width="330" alt="Set up with your AI agent — open the setup prompt copier"></a>
+</p>
+<p align="center"><sub>Click the setup button, copy the prompt, and give it to your AI agent. <a href="docs/agent-setup/prompt.txt">Read the prompt</a>.</sub></p>
+<!-- /AI setup by iAlturki -->
+
 # FolderHeat
 
 🔥 Folder icons that show how often you open them. Every folder you open in File Explorer warms up from **blue** to **green**, **orange** and **red**, and cools back down to the normal icon when you stop using it. One small `.exe` in the tray, no installer, no dependencies.
@@ -88,4 +97,7 @@ If Visual Studio isn't installed it falls back to MinGW-w64 (`windres`, then `gc
 
 ## License
 
-MIT © 2026 iALTURKi. See [LICENSE](LICENSE), [NOTICE](NOTICE), and [AUTHORS](AUTHORS). If you fork or redistribute, keep the copyright notice and attribution intact.
+CC BY-NC-SA 4.0 © 2026 iAlturki. See [LICENSE](LICENSE), [NOTICE](NOTICE), and [AUTHORS](AUTHORS). If you fork or redistribute, keep the copyright notice and attribution intact.
+
+
+Current original material is **CC BY-NC-SA 4.0 © iAlturki**. Earlier MIT releases retain their original terms; third-party material retains its own notices. See [NOTICE](NOTICE) and [LICENSES/previous-MIT.txt](LICENSES/previous-MIT.txt).

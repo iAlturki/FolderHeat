@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: CC-BY-NC-SA-4.0
+// Copyright (c) 2026 iAlturki
 #ifndef FOLDERHEAT_RESOURCE_H
 #define FOLDERHEAT_RESOURCE_H
 

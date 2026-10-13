@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: CC-BY-NC-SA-4.0
+// Copyright (c) 2026 iAlturki
 /*
  * FolderHeat - folder icons that show how often you open them.
  *
@@ -8,7 +10,7 @@
  *
  * Plain C on Win32, one translation unit. Build with build.bat.
  *
- * Copyright (c) 2026 iALTURKi. MIT License.
+ * Copyright (c) 2026 iAlturki. CC BY-NC-SA 4.0.
  */
 
 #ifndef UNICODE
@@ -1415,7 +1417,7 @@ static void OnCommand(UINT id)
             L"blue, green, orange, red. Folders you stop opening cool down\n"
             L"and go back to the normal icon.\n\n"
             APP_URL L"\n"
-            L"Copyright (c) 2026 iALTURKi. MIT License.",
+            L"Copyright (c) 2026 iAlturki. CC BY-NC-SA 4.0.",
             L"About " APP_NAME, MB_OK | MB_ICONINFORMATION | MB_SETFOREGROUND);
         break;
     case IDM_EXIT:
